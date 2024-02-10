@@ -1,0 +1,13 @@
+spring:
+ activemq:
+  broker-url: tcp://localhost:61616
+  username: admin
+  password: admin
+  
+  packages:
+   trust-all: true
+# jms:
+#  pub-sub-domain: false  #default pub sub is true
+ jms:
+  pub-sub-domain: true 
+ 
