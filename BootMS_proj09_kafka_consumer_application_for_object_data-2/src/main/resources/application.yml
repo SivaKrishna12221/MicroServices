@@ -1,0 +1,16 @@
+server:
+ port: 4766
+ servlet:
+  context-path: /kafka-consumer-2
+app:
+ topic:
+  name: nit-tpc-test2
+
+  consumer:
+spring:
+ kafka:
+  consumer:
+   bootstrap-servers: "localhost:9092"
+   key-serializer: org.apache.kafka.common.serialization.StringDeserialization
+   value-serailzer: org.apache.kafka.common.serialization.StringDeserialization
+   

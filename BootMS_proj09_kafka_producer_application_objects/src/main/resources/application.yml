@@ -1,0 +1,18 @@
+#server port
+server:
+ port: 4045
+#context-path
+ servlet:
+  context-path: /kafka-producer-app
+
+app:
+ topic:
+  name: nit-tpc-test2
+
+spring:
+ kafka:
+  producer:
+   bootstrap-server: "localhost:9092"
+   key-serializer: org.apache.kafka.common.serialization.StringSerializer
+   value-serializer: org.apache.kafka.common.serialization.StringSerializer
+   

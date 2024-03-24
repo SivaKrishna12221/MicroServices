@@ -1,0 +1,9 @@
+server:
+ port: 5000
+spring:
+ application:
+  name: billing_service
+
+logging:
+ file:
+  name: D:/logs/App.log

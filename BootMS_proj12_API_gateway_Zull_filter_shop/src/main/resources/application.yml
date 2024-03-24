@@ -1,0 +1,9 @@
+server:
+ port: 5003
+spring:
+ application:
+  name: filp-kart-shopping
+eureka:
+ client:
+  service-url:
+   default-zone: http://localhost:8761/eureka

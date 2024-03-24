@@ -1,0 +1,12 @@
+
+server:
+ port: 5001
+ servlet:
+  context-path: /shopping-service
+spring:
+ application:
+  name: shopping-service
+logging:
+ file:
+  name: D:/logs/app.log
+  

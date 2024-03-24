@@ -1,0 +1,22 @@
+#server port
+server:
+ port: 4042
+ servlet:
+  context-path: /RestKafkaApp
+#topic name
+app:
+ topic:
+  name: nit-tpc-dec
+#producer communication
+spring:
+ kafka:
+  producer:
+   bootstrap-servers: "localhost:9092"
+   key-serializer: org.apache.kafka.common.serialization.StringSerializer
+   value-serializer: org.apache.kafka.common.serialization.StringSerializer
+#Consumer communication
+  consumer:
+   bootstrap-servers: "localhost:9092"
+   key-serializer: org.apache.kafka.common.serialization.StringDeserializer
+   value-serializer: org.apache.kafka.common.serialization.StringDeserializer
+   

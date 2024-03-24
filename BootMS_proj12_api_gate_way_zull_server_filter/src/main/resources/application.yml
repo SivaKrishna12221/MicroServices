@@ -1,0 +1,19 @@
+server:
+ port: 9797
+spring:
+ application:
+  name: zull-server
+eureka:
+ client:
+  service-url:
+   default-zone: http://localhost:8761/eureka
+zuul:
+ routes: 
+  fpkt:
+   path: /flipkart-api/**
+   service-id: flip-kart-shopping
+logging:
+ file: 
+  name: D:/logs/filter.log
+ level:
+  com.nt.filter: info
