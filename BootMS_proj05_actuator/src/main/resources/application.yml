@@ -1,0 +1,28 @@
+server:
+ port: 7075
+info: 
+ app:
+  name: cust-service-detials
+  id: 3433
+  size: 10modules
+  createdby: nitteam
+  vendor: nareshit
+spring:
+ application:
+  name: cust-service
+management:
+ endpoint:
+  health: 
+   #show-details: always # it gives health details
+   enabled: false
+ endpoints:
+  web:
+   exposure:
+    include: info,beans,configprops,env,loggers,scheduledtasks,threaddump,heapdump
+    
+    #include: health,info #activate health ,info actuators
+ info:
+  env:
+   enabled: true  
+   
+    

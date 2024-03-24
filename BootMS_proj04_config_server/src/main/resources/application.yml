@@ -1,0 +1,23 @@
+
+server:
+ port: 8888
+spring:
+ cloud:
+  config:
+   server:
+    git: 
+     uri: https://gitlab.com/sivakrishna4/msproj01-git.git
+     clone-on-start: true
+     username: sivakrishnavelpula
+     password: velpulasi1@2
+
+#spring:
+# profiles:
+#  active: native
+# cloud:
+#  config:
+#   server:
+#    native:
+#     search-locations: classpath:/config
+
+ 

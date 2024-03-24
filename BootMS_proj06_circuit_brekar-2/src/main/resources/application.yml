@@ -1,0 +1,11 @@
+server:
+ port: 8989
+
+management:
+ health:
+  circuitbreakers:
+   enabled: true
+  endpoints:
+   web:
+    exposure: 
+     include: "*"
